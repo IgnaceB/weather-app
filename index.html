@@ -5,29 +5,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script defer src="assets/js/script.js"></script>
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet"> 
 	<title>Document</title>
 </head>
 <body>
-	<div id="research">
-		<input type="text" id="city">
+	<header>
+		<p class="title">Leave me alone with weather!</p>
+	</header>
+	<nav id="research">
+		<input type="text" id="city" placeholder="City">
+		<button class="button" id="submit">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+
+		</button>
 		<select name="country" id="country"></select>
 		<select name="state" id="state"></select>
-		<button class="button" id="submit">submit</div>
-		</div>
-		<div id="displayDay1">
+		
+	</nav>
+	<nav id="reset">
+		<p id="displayCity"></p>
+		<button class="button" id="resetButton"> Reset </button>
+			
+		
+	</nav>
+
+	<section class="containerDay">
+		<div id="displayDay1" class="displayDay">
 
 		</div>
-		<div id="displayDay2">
+		<div id="displayDay2" class="displayDay">
 			
 		</div>
-		<div id="displayDay3">
+		<div id="displayDay3" class="displayDay">
 			
 		</div>
-		<div id="displayDay4">
+		<div id="displayDay4" class="displayDay">
 			
 		</div>
-		<div id="displayDay5">
+		<div id="displayDay5" class="displayDay">
 			
 		</div>
-	</body>
-	</html>
+	</section>
+</body>
+</html>

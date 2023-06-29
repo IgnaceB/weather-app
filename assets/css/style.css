@@ -1,15 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: auto;
+  background: #eef2f3;
+  background-image: url("./../img/background.png");
+  font-family: poppins;
+  background-repeat: no-repeat;
+}
+body header {
+  background: rgb(32, 55, 84);
+  background: linear-gradient(135deg, rgb(32, 55, 84) 0%, rgb(23, 57, 125) 100%);
+}
+body header p {
+  font-family: Fasthand;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+}
+body #research {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(32, 55, 84);
+  background: linear-gradient(135deg, rgb(32, 55, 84) 0%, rgb(23, 57, 125) 100%);
+  justify-content: center;
+  align-items: center;
+  border: white solid 1px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 40vh;
+}
+body #research #city {
+  padding: 0;
+  width: 60%;
+  height: 10vw;
+  margin: 10px;
+  margin-right: 0;
+  appearance: none;
+  border: solid #5977ae 2px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+body #research #submit {
+  padding: 0;
+  width: 20%;
+  height: 10vw;
+  margin: 10px;
+  margin-left: 0;
+  appearance: none;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+  border-left: none;
+}
+body #research #submit svg {
+  height: 90%;
+  color: white;
+}
+body #research select {
+  padding: 0;
+  width: 40%;
+  height: 10vw;
+  margin: 10px;
+  margin-right: 0;
+  border: solid #066cc6 2px;
+  box-sizing: border-box;
+  padding: 5px;
+  background: white;
+}
+body #reset {
+  height: auto;
+  width: 100vw;
+  display: none;
+  flex-wrap: wrap;
+  background: rgb(32, 55, 84);
+  background: linear-gradient(135deg, rgb(32, 55, 84) 0%, rgb(23, 57, 125) 100%);
+  justify-content: center;
+  align-items: center;
+  border: white solid 1px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  height: 13vh;
+}
+body #reset p {
+  font-size: 40px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+body #reset #resetButton {
+  appearance: none;
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  width: 90px;
+  height: 40px;
+  color: #2f69fe;
+  font-size: large;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 5px;
+  border-bottom: 5px solid #2f69fe;
+}
+body .containerDay {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+body .containerDay .displayDay {
+  width: 90%;
+  border-radius: 25px;
+  margin: 2vh;
+  display: none;
+  overflow: hidden;
+  background: none;
+}
+body .containerDay .displayDay .hour {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #fcfbfc;
+  border-top: solid 10px #2f69fe;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+body .containerDay .displayDay .hour p {
+  margin: 0;
+}
+body .containerDay .displayDay .hour .day {
+  width: 45%;
+  font-weight: bold;
+}
+body .containerDay .displayDay .hour .date {
+  text-align: end;
+  width: 45%;
+}
+body .containerDay .displayDay .hour .hours {
+  width: 90%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 28px;
+  margin-top: 15px;
+}
+body .containerDay .displayDay .hour figure {
+  margin: 0;
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+body .containerDay .displayDay .hour figure img {
+  text-align: center;
+  width: 60%;
+}
+body .containerDay .displayDay .hour figure figcaption {
+  width: 40%;
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .containerDay .displayDay .hour .wind {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+body .containerDay .displayDay .hour .wind::before {
+  content: close-quote;
+  height: 25px;
+  width: 25px;
+  background-image: url("./../img/wind.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 5px;
+}
+body .containerDay .displayDay .hour .temperature {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+body .containerDay .displayDay .hour .temperature::before {
+  content: close-quote;
+  height: 25px;
+  width: 25px;
+  background-image: url("./../img/temp.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 5px;
+}
+body .containerDay .displayDay .hour .humidity {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+body .containerDay .displayDay .hour .humidity::before {
+  content: close-quote;
+  height: 25px;
+  width: 25px;
+  background-image: url("./../img/humidity.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 5px;
+}
+body .containerDay .displayDay .description {
+  padding-bottom: 15px;
+  font-size: small;
+  width: 100%;
+  text-align: center;
+}
+body .containerDay .displayDay .divSwitchLeft {
+  background: rgba(255, 255, 255, 0);
+  width: 10%;
+  display: flex;
+}
+body .containerDay .displayDay .divSwitchLeft img {
+  width: 100%;
+  transform: rotate(180deg);
+  background: none;
+}
+body .containerDay .displayDay .divSwitchRight {
+  background: rgba(255, 255, 255, 0);
+  width: 10%;
+  display: flex;
+}
+body .containerDay .displayDay .divSwitchRight img {
+  width: 100%;
+  background: none;
+}
+
 #state {
   display: none;
 }
-.divSwitchLeft{
-  background:black;
-  width:10%;
+
+.divSwitchLeft {
+  background: black;
+  width: 10%;
 }
-#displayDay1{
-  display:flex;
-}
-.divSwitchRight{
-  background:black;
-  width:10%;
-}
+
 /*# sourceMappingURL=style.css.map */
