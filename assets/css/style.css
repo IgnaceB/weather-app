@@ -1,0 +1,15 @@
+#state {
+  display: none;
+}
+.divSwitchLeft{
+  background:black;
+  width:10%;
+}
+#displayDay1{
+  display:flex;
+}
+.divSwitchRight{
+  background:black;
+  width:10%;
+}
+/*# sourceMappingURL=style.css.map */
